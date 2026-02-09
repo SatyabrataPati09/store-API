@@ -224,6 +224,8 @@ function updateCartCount(){
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   cartCount.innerText = cart.length;
 }
+// Update cart count with unique products
+
 updateCartCount();
 
 // Fetch products from FakeStore API
