@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us | Ecommerce</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  border-bottom:1px solid #ddd;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#888;
+  font-weight:500;
+}
+
+nav ul li a.active{
+  color:#000;
+  font-weight:600;
+}
+
+.nav-actions a{
+  border:1px solid #000;
+  padding:6px 12px;
+  margin-left:10px;
+  text-decoration:none;
+  color:#000;
+  border-radius:6px;
+  font-size:14px;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+
+.nav-actions svg{
+  width:16px;
+  height:16px;
+}
+
+
+.about{
+  padding:50px 80px;
+  text-align:center;
+}
+
+.about h1{
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+.about hr{
+  margin:20px auto 30px;
+  width:80%;
+}
+
+.about p{
+  max-width:900px;
+  margin:0 auto;
+  line-height:1.8;
+  color:#555;
+  font-size:15px;
+}
+
+
+.our-products{
+  padding:40px;
+  text-align:center;
+}
+
+.our-products h2{
+  font-size:30px;
+  margin-bottom:30px;
+}
+
+.category-container{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.category-card{
+  border:1px solid #ddd;
+  border-radius:6px;
+  overflow:hidden;
+}
+
+.category-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.category-card h3{
+  padding:15px;
+}
+
+
+footer{
+  margin-top:40px;
+  padding:20px;
+  border-top:1px solid #ddd;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+
+  <nav>
+  <h2>Ecommerce</h2>
+
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <a href="login.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+        <polyline points="10 17 15 12 10 7"/>
+        <line x1="15" y1="12" x2="3" y2="12"/>
+      </svg>
+      Login
+    </a>
+
+    <a href="register.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+      Register
+    </a>
+
+    <a href="cart.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+        <circle cx="9" cy="21" r="1"/>
+        <circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>
+      </svg>
+      Cart (0)
+    </a>
+  </div>
+</nav>
+
+
+<section class="about">
+  <h1>About Us</h1>
+  <hr>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere doloremque
+    veritatis odit similique sequi. Odit amet fuga nam quam quasi facilis sed doloremque
+    saepe sint perspiciatis explicabo totam vero quas provident ipsam, veritatis nostrum
+    velit quos recusandae est mollitia esse fugit dolore laudantium. Ex vel explicabo
+    earum unde eligendi autem praesentium, doloremque distinctio nesciunt porro tempore
+    quis eaque labore voluptatibus ea necessitatibus exercitationem tempora molestias.
+    Ad consequuntur veniam sequi ullam tempore vel tenetur soluta dolore sunt maxime
+    aliquam corporis est, quo saepe dolorem optio minus sint nemo totam dolorum!
+    Reprehenderit delectus expedita alias nam recusandae illo debitis repellat libero,
+    quasi explicabo molestiae saepe, dolorem tempore itaque eveniet quam dignissimos
+    blanditiis excepturi harum numquam vel nihil? Ipsum
+  </p>
+</section>
+
+
+<section class="our-products">
+  <h2>Our Products</h2>
+
+  <div class="category-container">
+    <div class="category-card">
+      <img src="./images/pexels-photo-298863.jpeg">
+      <h3>Men's Clothing</h3>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/pexels-photo-7679720.jpeg">
+      <h3>Women's Clothing</h3>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/pexels-photo-1927259.webp">
+      <h3>Jewelery</h3>
+    </div>
+
+    <div class="category-card">
+      <img src="./images/pexels-photo-356056.jpeg">
+      <h3>Electronics</h3>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Made with ❤️ by SAṬYABRATA PATI
+</footer>
+
+</body>
+</html>
