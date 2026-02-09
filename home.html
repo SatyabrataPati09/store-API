@@ -218,6 +218,7 @@ let allProducts = [];
 const container = document.getElementById("productContainer");
 const cartCount = document.getElementById("cartCount");
 
+// Add product to cart with quantity handling
 
 function updateCartCount(){
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
